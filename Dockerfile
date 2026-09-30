@@ -1,7 +1,7 @@
 FROM ubuntu:focal
 LABEL authors="bhavi_hark6y2"
 
-ENV DEBIAN_FRONTEND=nonintercative
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install -y curl
