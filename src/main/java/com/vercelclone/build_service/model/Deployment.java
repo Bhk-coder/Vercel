@@ -1,5 +1,8 @@
 package com.vercelclone.build_service.model;
 
+import java.time.LocalDateTime;
+
+
 public class Deployment
 {
   private int deployment_id;
@@ -7,17 +10,21 @@ public class Deployment
   private int project_id;
 
   private String repo_url;
-  private int commitSha;
-
+  private String  commitSha;
   private int workerId;
 
-  private int createdAt;
+  private LocalDateTime createdAt;
 
-  private int startedAt;
+  private LocalDateTime startedAt;
 
-  private int finishedAt;
+  private LocalDateTime lastheartbeat;
 
-  private int lastheartbeat;
+  private DeploymentStatus status;
 
-  private String status;
+  private String artifactPath;
+
+  private String failureReason;
+  private int retrycount ;
+
+
 }
